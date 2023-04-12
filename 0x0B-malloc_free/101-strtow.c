@@ -37,9 +37,7 @@ void free_everything(char **string, int i)
 	free(string);
 }
 /**
- * strtow - function that splits string into words
- * @str: string being passed
- * Return: null if string is empty or null or function fails
+ * strtow - function that splits string into words @str: string being passed  Return: null if string is empty or null or function fails
  */
 char **strtow(char *str)
 {
@@ -79,8 +77,10 @@ char **strtow(char *str)
 				c++;
 			}
 			words[b][c] = '\0';
-			b++; c = 0; 
-			length = 0; str++;
+			b++; 
+			c = 0; 
+		        length = 0;
+		       	str++;
 		}
 	}
 	return (words);
